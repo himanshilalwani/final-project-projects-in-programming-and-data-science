@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>LocateYourWaste - Boroughs</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/vertical-layout-light/style.css') }}">
+    <!-- endinject -->
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+        
+    <link href="{{ url_for('static',filename='assets/css/style.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <header id="header" class="d-flex align-items-center" style="background: #5cb874;">
+        <div class="container d-flex align-items-center">
+
+            <h2 class="logo me-auto"><a href="/" style="color: white;">LocateYourWaste</a></h2>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar" style="background-color:#5cb874;">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="/" style="color: white;">Home</a></li>
+
+                    <li><a class="nav-link scrollto" href="/nycwaste" style="color: white;">Waste in NYC</a></li>
+                    <!-- <li><a class="nav-link scrollto " href="#borough">Waste by Boroughs</a></li> -->
+
+                    <li class="dropdown"><a href="/boro" style="color: white;"><span style="color: white;">Waste
+                                by Boroughs</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="/bronx#bronx">Bronx</a></li>
+                            <li><a href="/brooklyn#brooklyn">Brooklyn</a></li>
+                            <li><a href="/manhattan#manhattan">Manhattan</a></li>
+                            <li><a href="/queens#queens">Queens</a></li>
+                            <li><a href="/staten#staten">Staten Island</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="/list_dropoffs" style="color: white;">Drop-off Locations</a></li>
+                    <li><a class="nav-link scrollto" href="/#team" style="color: white;">Team</a></li>
+                    <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header>
+
+    <section id="waste" class="about">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Waste Analysis By Boroughs</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img src="{{ url_for('static',filename='assets/img/download.png') }}" height="500px" width="600px" alt="" usemap="#nyc">
+                    <map name="nyc">
+                        <area shape="poly"
+                            coords="168,353,191,349,220,344,227,373,244,401,223,435,199,459,173,484,145,494,115,514,69,531,61,505,67,473,87,454,73,497,102,438,107,414,107,391,110,368,126,352,146,356"
+                            href="/staten#staten" alt="">
+                        <area shape="poly"
+                            coords="278,221,287,199,298,186,306,165,316,149,326,132,326,117,332,103,343,90,350,78,369,75,374,92,367,107,356,122,354,140,356,160,355,177,354,190,342,203,331,223,320,260,316,278,298,281,290,297,273,310,255,311,246,292,260,271,270,256,273,240"
+                            href="/manhattan#manhattan" alt="">
+                        <area shape="poly"
+                            coords="368,27,385,29,405,37,421,30,438,35,441,47,457,53,474,58,489,68,504,84,504,107,494,127,481,128,472,123,468,136,482,150,485,162,468,165,456,160,445,163,426,165,413,176,407,182,396,186,386,181,381,175,369,173,359,167,353,159,350,147,349,134,352,115,358,107,363,96,368,91,373,81,358,75,365,78,352,69,356,58,359,48,364,38"
+                            href="/bronx#bronx" alt="">
+                        <area shape="poly"
+                            coords="415,179,425,168,441,168,458,166,477,170,497,169,514,182,529,190,540,199,555,214,563,231,562,256,546,264,536,268,538,285,543,310,540,324,540,340,532,357,526,368,512,373,516,383,532,396,531,412,514,420,494,421,477,425,461,430,448,436,436,440,425,446,413,449,400,458,390,462,374,464,367,471,355,474,340,480,335,470,336,460,343,450,355,445,367,437,3777,434,392,433,407,428,421,419,424,404,421,389,420,375,419,352,415,339,418,326,415,314,408,298,397,300,385,304,420,193,405,191,392,191,378,180,364,187,358,195,342,210,333,223,321,240,341,244,354,254,360,273,366,281,374,292"
+                            href="/queens#queens" alt="">
+                        <area shape="poly"
+                            coords="322,252,318,265,310,273,299,273,285,288,279,299,267,316,264,336,252,354,250,376,257,398,271,408,280,421,278,441,307,447,332,440,356,432,373,424,381,433,401,430,415,425,418,413,417,395,413,386,414,372,415,357,415,339,415,327,412,314,403,308,390,306,371,295,360,282,350,271,349,260,340,255,328,248"
+                            href="/brooklyn#brooklyn" alt="">
+                    </map>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                    <h3>Click on any of the boroughs on our interactive map to get to know the waste trends there.</h3>
+                    <p class="fst-italic">
+                        OR
+                    </p>
+                    <p>
+                        Use the dropdown below
+                        <br>
+                        <br>
+                        <select name="boro" id="boro" onchange="location=this.value">
+                            <option value="/boro">Please Select A Boro</option>
+                            <option value="/manhattan#manhattan">Manhattan</option>
+                            <option value="/brooklyn#brooklyn">Brooklyn</option>
+                            <option value="/bronx#bronx">Bronx</option>
+                            <option value="/queens#queens">Queens</option>
+                            <option value="/staten#staten">Staten Island</option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- partial -->
+
+    <!-- content-wrapper ends -->
+    <!-- partial:partials/_footer.html -->
+    <footer id="footer">
+        <div class="container">
+            <h3>LocateYourWaste</h3>
+            <p>Learn to Lessen Pollution and Increase Personal Impact.</p>
+
+            <div>
+                Project by Dariga, Himanshi, and Yuki
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <!-- partial -->
+    </div>
+    <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+
+
+    <!-- Plugin js for this page -->
+    
+    <script src="{{ url_for('static',filename='assets/vendor/chart.js/Chart.min.js') }}"></script>
+
+
+</body>
+
+</html>

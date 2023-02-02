@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>LocateYourWaste - Home</title>
+
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  
+  <link href="{{ url_for('static',filename='assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static',filename='assets/css/style.css') }}" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <h2 class="logo me-auto"><a href="/">LocateYourWaste</a></h2>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/nycwaste">Waste in NYC</a></li>
+          <!-- <li><a class="nav-link scrollto " href="#borough">Waste by Boroughs</a></li> -->
+
+          <li class="dropdown"><a href="/boro"><span>Waste
+                                by Boroughs</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="/bronx#bronx">Bronx</a></li>
+                            <li><a href="/brooklyn#brooklyn">Brooklyn</a></li>
+                            <li><a href="/manhattan#manhattan">Manhattan</a></li>
+                            <li><a href="/queens#queens">Queens</a></li>
+                            <li><a href="/staten#staten">Staten Island</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="/list_dropoffs">Drop-off Locations</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        
+        <div class="carousel-item active" style="background-image: url({{ url_for('static',filename='assets/img/slide/slide1.jpeg') }})">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Welcome to <span>LocateYourWaste</span></h2>
+              <p class="animate__animated animate__fadeInUp">Your one stop shop to finding educational summary
+                statistics, visualizations, and analyses of New York City's waste tonnage,
+                recycling habits, and special waste drop-off locations. Click to learn more & personally contribute to
+                green activism.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url({{ url_for('static',filename='assets/img/slide/slide2.jpeg') }})">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">There's Too Much Grit in the Big Apple.</h2>
+              <p class="animate__animated animate__fadeInUp">NYC may be considered the best city in the world to many,
+                but
+                the dirtiness says otherwise. Click to see why NYC is ranked the second dirtiest city in the world & how
+                you
+                can personally contribute to bettering the city.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url({{ url_for('static',filename='assets/img/slide/slide3.webp') }})">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">The Rats Don't Run the City, WE DO.</h2>
+              <p class="animate__animated animate__fadeInUp">Let the city be ours once again; let it be home.
+              </p>
+              <p class="animate__animated animate__fadeInUp">Click to learn how.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= NYC Waste Fast Facts Section ======= -->
+    <section id="featured-services" class="featured-services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>NYC Waste Fast Facts</h2>
+          <div class="row no-gutters">
+            <div class="col-lg-4 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-chevron-right"></i></div>
+                <h4 class="title"><a href="">12,000 Tons</a></h4>
+                <p class="description">of waste are produced daily in New York City, despite the fact that New York City
+                  holds no landfills or incinerators.
+                  Much of the non-recyclable waste is sent to landfills in Pennsylvania,
+                  Ohio, & Virginia's landfills.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-chevron-right"></i></div>
+                <h4 class="title"><a href="">14,000,0000 Tons</a></h4>
+                <p class="description">of waste are produced annually in New York City,
+                  which is around 10 million tons more than Chicago, 9 million tons more than Boston,
+                  & 12 million more than Philadephia. </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-chevron-right"></i></div>
+                <h4 class="title"><a href="">7,800,000 Miles</a></h4>
+                <p class="description">are ran by Diesel trucks carrying solely Manhattan's garbage annually.
+                  This is equivalent to driving over 312 times around the Earth!
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </section>
+    <!-- End NYC waste fast facts Section -->
+
+    <!-- ======= Project Motive Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Project Motive</h2>
+          <p>The first step to solving a problem is to identify & acknowledge it.
+            We want our project to be purposeful, educational, and insightful.
+            We want people to utilize our website to learn more about New York City's historical
+            waste trends and for them to ultimately realize how big of a waste management problem this
+            city holds. We want people to start realizing that this is a problem of great urgency,
+            and a problem that can be majorly alleviated if they start to care and create change. </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="{{ url_for('static',filename='assets/img/about1.jpeg') }}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>Preventing excessive waste benefits you, your community, and the environmental as a whole.</h3>
+            <p class="fst-italic">
+              Many waste prevention efforts often simply involve a change in attitude or lifestyle;
+              you can make waste prevention a part of your daily routine. A little time and effort goes a long way
+              toward
+              bettering the environment overall.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circled"></i> It's now or never.</li>
+              <li><i class="bi bi-check-circled"></i> Start learning about current waste management issues & unlearning
+                bad waste disposal habits.</li>
+              <li><i class="bi bi-check-circled"></i> Check out our website to learn about waste trends in NYC as a
+                whole, by boroughs, and
+                locate where you can responsibly drop-off special waste personally.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Us Section -->
+
+    <!-- ======= Meet the Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Meet the Team</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="{{ url_for('static',filename='assets/img/team/team1.jpeg') }}" alt="">
+              <h4>Dariga Shokayeva</h4>
+              <span>NYU Abu Dhabi '24</span>
+              <p>
+                Computer Science Major
+              </p>
+              <div class="social">
+                <a href="mailto: ds6058@nyu.edu"><i class="bi bi-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/dariga-shokayeva/"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src=" {{ url_for('static',filename='assets/img/team/team2.jpeg') }}" alt="">
+              <h4>Himanshi Lalwani</h4>
+              <span>NYU Abu Dhabi '24</span>
+              <p>
+                Mathematics & Computer Science Major
+              </p>
+              <div class="social">
+                <a href="mailto: hl3937@nyu.edu"><i class="bi bi-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/himanshi-lalwani/"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src=" {{ url_for('static',filename='assets/img/team/team3.jpeg') }}" alt="">
+              <h4>Yuki Fang</h4>
+              <span>NYU Abu Dhabi '24</span>
+              <p>
+                Economics Major
+              </p>
+              <div class="social">
+                <a href="mailto: yf2031@nyu.edu"><i class="bi bi-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/yuki-fang/"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Meet the Team Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>LocateYourWaste</h3>
+      <p>Learn to Lessen Pollution and Increase Personal Impact.</p>
+      <div>
+        Project by Dariga, Himanshi, and Yuki
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+   
+  <script src="{{ url_for('static',filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static',filename='assets/js/main.js') }}"></script>
+
+</body>
+
+</html>
