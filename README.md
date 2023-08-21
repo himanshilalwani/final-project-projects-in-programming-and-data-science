@@ -1,4 +1,4 @@
-# ppds-locate-your-waste
+# LocateYourWaste
 Final Project for TECH-UB 24 002 - Projects in Programming and Data Science <br>
 By Dariga, Himanshi, and Yuki
 
