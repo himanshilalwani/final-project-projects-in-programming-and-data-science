@@ -1,4 +1,6 @@
 # LocateYourWaste - Empowering NYC for a Cleaner Future
+<img src="https://github.com/himanshilalwani/ppds-locate-your-waste/assets/81231340/b0a78125-8611-4269-978b-cdefc25c4b8f" width="50%">
+
 Welcome to **LocateYourWaste**, a revolutionary website dedicated to reducing pollution and fostering personal impact in the bustling city of New York. By leveraging six diverse datasets sourced from NYC Open Data, we've created a comprehensive platform that delivers invaluable information about cleanliness rates, waste tonnage, recycling rates, and special waste drop-off locations. Our mission is twofold: to enhance transparency in accessing NYC's waste information and to empower residents to actively participate in mitigating the waste crisis. This README provides an insightful overview of LocateYourWaste's features and the technologies powering this transformative initiative.
 
 ## Project Overview
@@ -35,8 +37,7 @@ The source code for LocateYourWaste is hosted on Google Colab. You can access an
 [Source Code](https://github.com/himanshilalwani/ppds-locate-your-waste/blob/875d6445d33923151fad1f51a39c8a076440e6d4/source_code.ipynb)
 
 ## Demo
-Click on the image below to be directed to the video walkthrough.
-[<img width="50%" src="https://github.com/himanshilalwani/ppds-locate-your-waste/assets/81231340/b0a78125-8611-4269-978b-cdefc25c4b8f">](https://drive.google.com/drive/u/0/folders/1yHha-rW-o_WeWrPK9YUgz6XqO4qnRDtN)
+Click <a href="https://drive.google.com/drive/u/0/folders/1yHha-rW-o_WeWrPK9YUgz6XqO4qnRDtN">here</a> to see the video walkthrough.
 
 
 
