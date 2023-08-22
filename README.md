@@ -35,5 +35,8 @@ The source code for LocateYourWaste is hosted on Google Colab. You can access an
 [Source Code](https://github.com/himanshilalwani/ppds-locate-your-waste/blob/875d6445d33923151fad1f51a39c8a076440e6d4/source_code.ipynb)
 
 ## Demo
+Click on the image below to be directed to the video walkthrough.
+[<img width="50%" src="https://github.com/himanshilalwani/ppds-locate-your-waste/assets/81231340/b0a78125-8611-4269-978b-cdefc25c4b8f">](https://drive.google.com/drive/u/0/folders/1yHha-rW-o_WeWrPK9YUgz6XqO4qnRDtN)
+
 
 
