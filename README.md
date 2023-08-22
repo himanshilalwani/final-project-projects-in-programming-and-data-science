@@ -9,7 +9,7 @@ LocateYourWaste is the culmination of extensive efforts to address NYC's waste m
 ## Pages and Features
 LocateYourWaste is organized into four main pages, each offering a unique set of features:
 1. **Homepage**: Get acquainted with NYC's waste issue, the project's significance, and the dedicated team behind LocateYourWaste. Learn about the ongoing waste mismanagement problem and how we're striving for change.
-2.** Waste in NYC**: Access interactive infographics showcasing the city's annual total waste production from 1990 to 2022. Dive into the breakdown of waste types, borough-wise waste production, and more. Gain insights from borough rankings and sanitation investment details.
+2. **Waste in NYC**: Access interactive infographics showcasing the city's annual total waste production from 1990 to 2022. Dive into the breakdown of waste types, borough-wise waste production, and more. Gain insights from borough rankings and sanitation investment details.
 3. **Waste by Borough**: Engage with borough-specific data visualizations. Choose a borough to explore annual waste production, recycling rates, street cleanliness ratings, and demographic information. Understand each borough's performance and impact.
 4. **Waste Drop-Off Locations**: Utilize our interactive map to locate specialized waste drop-off points. Filter by waste type and borough to find relevant drop-off locations. Access additional information about each location's operational details.
 
